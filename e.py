@@ -8,9 +8,11 @@ def factorial(n):
     return n * factorial(n - 1)
 print(factorial(5))
 
-#This code takes advantage of the MacLaurin approximation of e^x
-#Notably, e^x = x ** n / n! as a sum for i in range(0, infty)
-#e = e ** 1 which is the sum of 1/n! for i in range(0, infty)
+print(
+  """This code takes advantage of the MacLaurin approximation of e^x.
+Notably, e^x = x ** n / n! as a sum for i in range(0, infty).
+e = e ** 1 which is the sum of 1/n! for i in range(0, infty).
+      """)
 
 sum = 0
 
