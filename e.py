@@ -1,5 +1,7 @@
 import math
 from math import e
+pip import icecream
+from icecream import ic
 
 def factorial(n):
   if n == 0:
@@ -20,5 +22,5 @@ for i in range(0,100,1):
   sum += factorial(i) ** (-1)
   print(sum)
 
-#Actual value of Euler's number (e):
+print("Actual value of Euler's number (e):")
 print(math.e)
