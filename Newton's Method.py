@@ -1,5 +1,6 @@
 import math
 print("Newton's Method\n")
+print("Note: For greatest accuracy, choose a large number of iterations, and a guess close to the actual root")
 def f(x):
     return x**2 + x
   #Any polynomial function here to define f(x)
