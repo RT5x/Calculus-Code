@@ -1,0 +1,23 @@
+import math
+from sympy import *
+import numpy as np
+print("Newton's Method\n")
+
+def f(x):
+    return x**2 + x
+  #Any polynomial function here
+
+def d_f(x):
+    h = 1e-5
+    return (f(x+h)-f(x-h))/(2*h)
+
+#Input initial guess
+x0 = float(input("Guess: "))
+
+#Iterations needed to make approximation
+k = int(input("Number of iterations: "))
+
+for i in range(k):
+  x = x0 - ((f(x0))/(d_f(x0)))
+  print("Guess: ")
+  print(round(x, 4))
